@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Modalidades</title>
+</head>
+<body>
+  <h1>Lista de Modalidades</h1>
+  <ul>
+    <% modalidades.forEach((modalidad) => { %>
+      <li>
+        <a href="/modalidades/<%= modalidad.id %>"><%= modalidad.nombre %></a>
+      </li>
+    <% }); %>
+  </ul>
+  <a href="/modalidades/agregar">Agregar Modalidad</a>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Editar Modalidad</title>
+</head>
+<body>
+  <h1>Editar Modalidad</h1>
+  <form action="/modalidades/editar/<%= modalidad.id %>" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" value="<%= modalidad.nombre %>" required>
+    <br>
+    <label for="descripcion">Descripción:</label>
+    <textarea id="descripcion" name="descripcion" rows="4" required><%= modalidad.descripcion %></textarea>
+    <br>
+    <input type="submit" value="Guardar Cambios">
+  </form>
+  <a href="/modalidades">Volver a la Lista</a>
+</body>
+</html>
