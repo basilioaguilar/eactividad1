@@ -1,5 +1,6 @@
 class CategoriasController {
     constructor() {
+      // En este ejemplo, usamos un objeto para almacenar las categorías.
       this.categorias = {};
       this.idContador = 1;
     }
