@@ -19,3 +19,4 @@ app.use('/categorias', categoriasRouter);
 app.listen(port, () => {
   console.log(`Servidor en funcionamiento en el puerto ${port}`);
 });
+module.exports = app;
